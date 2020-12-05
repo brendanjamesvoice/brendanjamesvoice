@@ -1,24 +1,29 @@
 .container
+  background: #fff
   min-height: 100vh
 
 .headerContainer
-  background: #26495f
+  background: #102f44
   display: flex
   justify-content: center
-  padding: 1rem 1rem 0 1.5rem
+  padding: 0 1.5rem
   width: 100%
 
 .headerContent
   align-items: center
   display: flex
   justify-content: space-between
-  max-width: 800px
+  max-width: 990px
   width: 100%
 
-.title
+.headerImage
+  @media (min-width: 768px)
+    transform: translateX(-20px)
+
+.headerTitle
   color: #fff
   font-family: "Khula", sans-serif
-  font-size: 2rem
+  font-size: 1.5rem
   font-weight: 200
   letter-spacing: 5px
   line-height: 1.2
@@ -27,6 +32,7 @@
   text-transform: uppercase
 
   span
+    margin-left: 1rem
     opacity: .25
     text-shadow: none
 
@@ -36,7 +42,7 @@
 
 .main
   align-items: center
-  background: rgba(0,0,0,.02)
+  color: #000
   display: flex
   flex-direction: column
   flex: 1
@@ -44,13 +50,14 @@
   padding: 0 1rem 4rem
 
 .hero
-  max-width: 800px
-  padding: 2rem 0 3rem
+  max-width: 990px
+  padding: 2rem 0
   width: 100%
 
   @media (min-width: 768px)
     display: flex
     justify-content: space-between
+    padding: 3rem 0
 
 .sectionHeader
   color: rgba(0,0,0,0.5)
@@ -62,82 +69,79 @@
   text-transform: uppercase
   white-space: nowrap
 
-.aboutCopy
-  color: rgba(0, 0, 0, 0.5)
-  font-family: "Raleway"
-  font-weight: 900
-  line-height: 2.1
+.aboutSection
+  flex: 1
 
-  strong
-    color: #e1a53b
+  p
+    font-family: "Raleway"
+    font-size: 18px
+    font-weight: 200
+    line-height: 2
+    margin: 0
 
-.bookingContactSection 
+    &:last-child
+      margin-top: 1.5rem
+
+    a, strong
+      color: #e1a53b
+
+.contactSection 
   margin-top: 2rem
 
   @media (min-width: 768px)
-    flex: 0
-    margin-left: 50px
+    flex-basis: 298px
+    margin-left: 60px
     margin-top: 0
-    padding-right: 15px
 
     .sectionHeader
       display: flex
       justify-content: center
 
-.bookingContactChips
-  display: grid
-  grid-template-columns: repeat(2, 1fr)
-  column-gap: 10px
-
-  @media (min-width: 768px)
-    display: block
-
-.bookingContactChip
-  background: rgba(0, 0, 0, 0.05)
-  border-radius: 5px
-  color: rgba(0, 0, 0, 0.5)
-  font-size: 12px
+.contact
+  background: rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  color: rgba(0, 0, 0, .6)
+  font-size: 14px
   line-height: 1.5
-  padding: 0.5rem 0.75rem
-
-  @media (min-width: 768px)
-    &:last-child
-      margin-top: 1rem
+  padding: 1rem
 
 .showcaseSection
   align-items: center
-  background: #fff
-  border-radius: 3px
-  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1)
   display: flex
   flex-direction: column
   justify-content: center
-  max-width: 1024px
-  padding: 1rem 0
   width: 100%
 
 .grid
   display: grid
-  max-width: 960px
-  padding: 1rem
+  max-width: 990px
   width: 100%
   grid-auto-rows: auto
-  grid-gap: 2em
+  grid-gap: 2rem
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))
 
-.gridCell
-  iframe
-    max-width: 100%
+  @media (min-width: 768px)
+    grid-gap: 3rem
 
-.gridCellHeader
-  font-size: 14px
+.clipHeader
+  color: rgba(0, 0, 0, .6)
+  font-size: 12px
   font-weight: 500
-  margin-bottom: .5rem
+  margin-bottom: 6px
+  padding-left: 4px
 
-.tweetCell
-  border: none
-  display: block
-  padding: 0
-  transform: translateY(-10px)
-  grid-column: 2 / 1
-  grid-row: 1 / 3
+.clipFrame
+  background: #000
+  border-radius: 10px
+  overflow: hidden
+  position: relative
+
+  iframe
+    display: block
+    min-height: 100%
+    max-height: 200px
+    min-width: 100%
+    max-width: 200px
+
+    @media (min-width: 768px)
+      min-height: auto
