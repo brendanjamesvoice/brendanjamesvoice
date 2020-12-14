@@ -30,14 +30,15 @@ export default function Home() {
             James
             <span>Voice</span>
           </h1>
-          <Image
-            className={styles.headerImage}
-            src="/headshot.png"
-            alt="Brendan James"
-            width={200}
-            height={200}
-            priority={true}
-          />
+          <div className={styles.headerImage}>
+            <Image
+              src="/headshot.png"
+              alt="Brendan James"
+              width={200}
+              height={200}
+              priority={true}
+            />
+          </div>
         </div>
       </header>
 
