@@ -36,6 +36,7 @@ export default function Home() {
             alt="Brendan James"
             width={200}
             height={200}
+            priority={true}
           />
         </div>
       </header>
@@ -57,7 +58,7 @@ export default function Home() {
             <p>
               Brendan produces edited voice-over tracks out of his professional
               home studio in upstate New York. To book his services for your
-              next campaign, contact him at{" "}
+              next campaign, send him an email at{" "}
               <a href="mailto:brendanjamesvo@gmail.com">
                 brendanjamesvo@gmail.com
               </a>
