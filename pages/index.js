@@ -86,8 +86,8 @@ export default function Home() {
         <section className={styles.showcaseSection}>
           <div className={styles.grid}>
             <ClipContainer
-              title="Kawasaki | We’re Back"
-              src="https://www.youtube.com/embed/xmjfQEr4MCs"
+              title="Comcast | Rico Roman: Medals"
+              src="https://www.youtube.com/embed/fKw1jloEnrM?start=51"
             />
             <ClipContainer
               title="Audi | Winter Sports"
@@ -122,8 +122,8 @@ export default function Home() {
               src="https://www.youtube.com/embed/cYCNrTpsHLU"
             />
             <ClipContainer
-              title="Comcast | Rico Roman: Medals"
-              src="https://www.youtube.com/embed/fKw1jloEnrM?start=51"
+              title="Kawasaki | We’re Back"
+              src="https://www.youtube.com/embed/xmjfQEr4MCs"
             />
             <div>
               <div className={styles.clipHeader}>
