@@ -1,0 +1,175 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Brendan James Voice">
+  <header class="bg-sky-950 min-h-[200px]">
+    <div class="container mx-auto max-w-6xl px-5">
+      <div class="flex justify-between items-center">
+        <h1
+          class="font-extralight font-khula text-white text-4xl md:text-6xl uppercase tracking-widest"
+        >
+          Brendan
+          <br />
+           James
+          <span class="opacity-25">Voice</span>
+        </h1>
+        <div>
+          <Image
+            src="/headshot.png"
+            alt="Brendan James"
+            class="max-w-fit"
+            width={200}
+            height={200}
+            priority={true}
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mx-auto max-w-6xl px-5">
+      <section class="grid md:grid-cols-2 lg:grid-cols-3 py-8 gap-8">
+        <div class="flex flex-col md:col-span-2 md:row-span-2">
+          <p
+            class="[&>strong]:text-amber-800 [&>strong]:font-semibold leading-relaxed text-lg text-neutral-800"
+          >
+            Brendan James is the voice of ad campaigns for internationally
+            recognized brands including{" "}
+            <strong>
+              Burger King, Budweiser, Audi, Kawasaki, Comcast, Nestle
+            </strong>{" "}
+             and others. His decade-plus career features multiple seasons of
+            promos for <strong>Major League Soccer</strong> as well as an
+            eclectic portfolio including videos in the technology and gaming
+            industries. Brendan produces edited voice-over tracks out of his
+            professional home studio in upstate New York.
+          </p>
+          <div class="mt-10 justify-end text-neutral-600">
+            <div
+              class="text-base border-l-2 border-neutral-200 px-4 font-khula"
+            >
+              <h2 class="mb-6 font-khula font-semibold">Represented By:</h2>
+              <div class="space-y-5">
+                <p>
+                  <span class="font-semibold">Innovative Artists</span> - New
+                  York
+                  <br />
+                   Commercial, Promo, Narration
+                  <br />
+                   Agent Allan Duncan{" "}
+                  <a
+                    class="text-amber-800 underline font-semibold"
+                    href="tel:2122536900"
+                  >
+                    (212) 253-6900
+                  </a>
+                </p>
+                <p>
+                  <span class="font-semibold">Take 3 Talent</span> - New York
+                  <br />
+                   Animation, Commercial
+                  <br />
+                   Agent Morgan Peterson{" "}
+                  <a
+                    class="text-amber-800 underline font-semibold"
+                    href="tel:6462893915"
+                  >
+                    (646) 289-3915
+                  </a>
+                </p>
+                <p>
+                  Contact <span class="font-semibold">Brendan James</span>
+                   direct at{" "}
+                  <a
+                    class="text-amber-800 underline font-semibold"
+                    href="mailto:brendanjamesvo@gmail.com"
+                  >
+                    brendanjamesvo@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Card
+          title="EVE (X) Apple"
+          src="https://www.youtube.com/embed/I0fIN3MkcvE"
+        />
+        <div class="space-y-1 font-khula">
+          <div class="text-sm text-neutral-800 font-semibold">Zantac</div>
+          <div class="bg-black">
+            <video controls>
+              <source src="/zantac.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <Card
+          title="Optimum"
+          src="https://player.vimeo.com/video/117604935?title=0&byline=0&portrait=0"
+        />
+        <Card
+          title="Comcast | Rico Roman: Medals"
+          src="https://www.youtube.com/embed/fKw1jloEnrM?start=51"
+        />
+        <Card
+          title="Audi | Winter Sports"
+          src="https://www.youtube.com/embed/CN4MdqjjcWE"
+        />
+        <Card
+          title="MLS | Stand As One"
+          src="https://www.youtube.com/embed/w-lOJDXt7ag"
+        />
+        <Card title="Kyocera" src="https://www.youtube.com/embed/DR5hprucYX0" />
+        <div class="space-y-1 font-khula">
+          <div class="text-sm text-neutral-800 font-semibold">
+            Optimum Sum Games
+          </div>
+          <div class="bg-black">
+            <video controls>
+              <source src="/sum-games.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <Card
+          title="Nestle | Pure Life"
+          src="https://www.ispot.tv/share/nuYn?start=15"
+        />
+        <Card
+          title="EVE Online"
+          src="https://www.youtube.com/embed/cYCNrTpsHLU"
+        />
+        <div class="space-y-2">
+          <div>
+            <div class="text-sm font-semibold ml-4 mb-2">
+              MP3 | Commercials 1
+            </div>
+            <audio controls src="/commercials.mp3"></audio>
+          </div>
+          <div>
+            <div class="text-sm font-semibold ml-4">MP3 | Commercials 2</div>
+            <audio controls src="/commercials2.mp3"></audio>
+          </div>
+          <div>
+            <div class="text-sm font-semibold ml-4">MP3 | Promos</div>
+            <audio controls src="/promo.mp3"></audio>
+          </div>
+        </div>
+        <div class="space-y-1 font-khula">
+          <div class="text-sm text-neutral-800 font-semibold">
+            Budweiser | This Bud&apos;s For Dad
+          </div>
+          <blockquote class="twitter-tweet -translate-y-3">
+            <a
+              href="https://twitter.com/budweiserusa/status/1008331138585251840"
+              target="_blank"
+              rel="noopener noreferrer"></a>
+          </blockquote>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
